@@ -6,12 +6,14 @@ def validate_input(string):
         return True
     return False
 
+def prog():
+    print('Программa по заданному номеру четверти показывает')  
+    print('диапазон возможных координат точек в этой четверти (x и y).')
+    values = ['x>0; y>0', 'x<0; y>0', 'x<0; y<0', 'x>0; y<0']
+    quadrant = input('Введите номер четверти (1 - 4):->')
+    if validate_input(quadrant):
+        print(values[int(quadrant)-1])
+    else:
+        print('Введите число от 1 до 4!')
 
-print('Программa по заданному номеру четверти показывает')
-print('диапазон возможных координат точек в этой четверти (x и y).')
-values = ['x>0; y>0', 'x<0; y>0', 'x<0; y<0', 'x>0; y<0']
-quadrant = input('Введите номер четверти (1 - 4):->')
-if validate_input(quadrant):
-    print(values[int(quadrant)-1])
-else:
-    print('Введите число от 1 до 4!')
+prog()
