@@ -2,7 +2,7 @@ import telebot
 from random import randint
 
 # создаем бот-клиента
-bot = telebot.TeleBot("5811949740:AAHxJNNbvFBpUV1gsXrivHqbmQ09KKEs6f0")   # вставьте сюда токен для бота
+bot = telebot.TeleBot("")   # вставьте сюда токен для бота
 # переменные
 names = []
 candies = 50
